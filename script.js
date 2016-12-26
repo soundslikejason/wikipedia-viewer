@@ -10,7 +10,7 @@ $(document).ready(function() {
       success: function(data) {
         $('#results').html('');
         for (i = 0; i < data[1].length; i++) {
-          $('#results').append("<li><a href=" + data[3][i] + " target='_blank'>" + data[1][i] + "</a><p>" + data[2][i] + "</p></li>");
+          $('#results').append("<li><div><a href=" + data[3][i] + " target='_blank'>" + data[1][i] + "</a></div><p>" + data[2][i] + "</p></li>");
         }
       }
     });
