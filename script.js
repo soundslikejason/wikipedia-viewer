@@ -15,4 +15,10 @@ $(document).ready(function() {
       }
     });
   });
+
+  $('#searchTerms').keypress(function(e) {
+    if (e.which == 13) {
+      $('#searchButton').trigger('click');
+    }
+  });
 });
